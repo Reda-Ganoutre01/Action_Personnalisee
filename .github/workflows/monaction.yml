@@ -1,0 +1,15 @@
+name: Test de mon action
+
+on: [push]
+
+jobs:
+  test-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Dire bonjour avec mon action
+        uses: Reda-Ganoutre01/Action_Personnalisee@main
+        with:
+          nom: "Reda-Ganoutre01"
+          langue: "es"

@@ -1,0 +1,18 @@
+
+name: Bonjour Action
+description: Une action simple pour dire bonjour
+author: Laraqui
+
+inputs:
+  nom:
+    description: Le nom de la personne à saluer
+    required: true
+  langue:
+    description: Langue de salutation (fr, en, es)
+    required: false
+    default: fr
+
+runs:
+  using: node16
+  main: index.js
+
